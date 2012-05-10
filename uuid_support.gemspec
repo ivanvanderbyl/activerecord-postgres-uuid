@@ -5,6 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Ivan Vanderbyl"]
   gem.email         = ["ivanvanderbyl@me.com"]
   gem.description   = %q{Adds the UUID column type to ActiveRecord PostgreSQL Adapter}
+  gem.summary       = gem.description
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
