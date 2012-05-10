@@ -4,7 +4,7 @@ require File.expand_path('../lib/active_record/postgresql/uuid/version', __FILE_
 Gem::Specification.new do |gem|
   gem.authors       = ["Ivan Vanderbyl"]
   gem.email         = ["ivanvanderbyl@me.com"]
-  gem.description   = %q{Adds the UUID column type to ActiveRecord PostgreSQL Adapter}
+  gem.description   = %q{Adds support for PostgreSQL 128 bit UUID column type to ActiveRecord}
   gem.summary       = gem.description
   gem.homepage      = ""
 
