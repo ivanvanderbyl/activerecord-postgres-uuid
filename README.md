@@ -1,6 +1,6 @@
-# UuidSupport
+# Activerecord Postgres UUID Support
 
-TODO: Write a gem description
+Adds support for PostgreSQL 128 bit UUID column type to ActiveRecord
 
 ## Installation
 
