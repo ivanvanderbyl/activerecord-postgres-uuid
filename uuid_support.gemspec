@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ActiveRecord::PostgreSQL::UUIDColumn::VERSION
 
-  gem.add_dependency "activerecord", ">= 3.1.0"
+  gem.add_dependency "rails", ">= 3.1.0"
   gem.add_dependency "pg", ">= 0.12.0"
 end
