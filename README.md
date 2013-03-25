@@ -1,12 +1,12 @@
-# UuidSupport
+# Activerecord Postgres UUID Support
 
-TODO: Write a gem description
+Adds support for PostgreSQL 128 bit UUID column type to ActiveRecord
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'uuid_support'
+    gem 'activerecord-postgres-uuid'
 
 And then execute:
 
@@ -14,11 +14,32 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install uuid_support
+    $ gem install activerecord-postgres-uuid
+
+### Note for Rails 3.1 and Above
+
+You'll also need to install `activerecord-postgres-hstore`:
+
+    gem "activerecord-postgres-hstore", git: "git://github.com/softa/activerecord-postgres-hstore.git"
+
+Referencing the master branch of `activerecord-postgres-hstore` should
+only be neccissary until it hits version `0.4.0`.
 
 ## Usage
 
-TODO: Write usage instructions here
+Once the gem is installed you can start safely referencing UUID column
+types in your migrations:
+
+    class CreatePayments < ActiveRecord::Migration
+      def change
+        create_table :payments do |t|
+          t.uuid :uuid
+          t.integer :amount
+
+          t.timestamps
+        end
+      end
+    end
 
 ## Contributing
 
